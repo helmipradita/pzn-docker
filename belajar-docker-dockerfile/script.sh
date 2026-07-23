@@ -165,3 +165,10 @@ docker image ls
 docker container create --name multi -p 8080:8080 helmipradita/multi
 
 docker container start multi
+
+# Docker Hub
+docker login -u helmipradita
+
+# use personal access token as password
+
+docker push helmipradita/multi
