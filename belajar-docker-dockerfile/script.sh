@@ -18,3 +18,8 @@ docker container create --name command helmipradita/command
 docker container start command
 
 docker container logs command
+
+# LABEL Instruction
+docker build -t helmipradita/label label
+
+docker image inspect helmipradita/label
