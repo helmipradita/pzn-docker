@@ -156,3 +156,12 @@ docker image inspect helmipradita/entrypoint
 docker container create --name entrypoint -p 8080:8080 helmipradita/entrypoint
 
 docker container start entrypoint
+
+# Multi Stage Build
+docker build -t helmipradita/multi multi
+
+docker image ls
+
+docker container create --name multi -p 8080:8080 helmipradita/multi
+
+docker container start multi
