@@ -32,3 +32,12 @@ docker container create --name add helmipradita/add
 docker container start add
 
 docker container logs add
+
+# COPY Instruction
+docker build -t helmipradita/copy copy
+
+docker container create --name copy helmipradita/copy
+
+docker container start copy
+
+docker container logs copy
