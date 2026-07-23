@@ -23,3 +23,12 @@ docker container logs command
 docker build -t helmipradita/label label
 
 docker image inspect helmipradita/label
+
+# ADD Instruction
+docker build -t helmipradita/add add
+
+docker container create --name add helmipradita/add
+
+docker container start add
+
+docker container logs add
