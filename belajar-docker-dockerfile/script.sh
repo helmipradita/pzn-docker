@@ -109,3 +109,12 @@ docker container inspect volume
 #a35f6592ab4cd008dc4fde4f562ad2f546c50703b40578346de2fc987cdb7bc1
 
 docker volume ls
+
+# WORKDIR Instruction
+docker build -t helmipradita/workdir workdir
+
+docker container create --name workdir -p 8080:8080 helmipradita/workdir
+
+docker container start workdir
+
+docker container exec -i -t workdir /bin/sh
