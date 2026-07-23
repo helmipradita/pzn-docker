@@ -127,3 +127,12 @@ docker container create --name user -p 8080:8080 helmipradita/user
 docker container start user
 
 docker container exec -i -t user /bin/sh
+
+# ARG Instruction
+docker build -t helmipradita/arg arg --build-arg app=haeldigital
+
+docker container create --name arg -p 8080:8080 helmipradita/arg
+
+docker container start arg
+
+docker container exec -i -t arg /bin/sh
