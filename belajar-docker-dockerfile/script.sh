@@ -84,3 +84,28 @@ docker container ls
 docker container logs env
 
 docker container stop env
+
+# VOLUME Instruction
+docker build -t helmipradita/volume volume
+
+docker image inspect helmipradita/volume
+
+# docker container create --name volume --env APP_PORT=8090 -p 9090:8090 helmipradita/volume
+
+docker container create --name volume -p 8080:8080 helmipradita/volume
+
+docker container start volume
+
+docker container logs volume
+
+curl localhost:9090/helmi
+
+curl localhost:9090/pradita
+
+docker container logs volume
+
+docker container inspect volume
+
+#a35f6592ab4cd008dc4fde4f562ad2f546c50703b40578346de2fc987cdb7bc1
+
+docker volume ls
