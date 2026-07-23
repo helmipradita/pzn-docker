@@ -147,3 +147,12 @@ docker container start health
 docker container ls
 
 docker container inspect health
+
+# ENTRYPOINT Instruction
+docker build -t helmipradita/entrypoint entrypoint
+
+docker image inspect helmipradita/entrypoint
+
+docker container create --name entrypoint -p 8080:8080 helmipradita/entrypoint
+
+docker container start entrypoint
