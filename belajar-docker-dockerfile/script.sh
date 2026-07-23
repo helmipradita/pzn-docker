@@ -41,3 +41,12 @@ docker container create --name copy helmipradita/copy
 docker container start copy
 
 docker container logs copy
+
+# .dockerignore
+docker build -t helmipradita/ignore ignore
+
+docker container create --name ignore helmipradita/ignore
+
+docker container start ignore
+
+docker container logs ignore
