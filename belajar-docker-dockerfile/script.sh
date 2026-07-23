@@ -50,3 +50,18 @@ docker container create --name ignore helmipradita/ignore
 docker container start ignore
 
 docker container logs ignore
+
+# EXPOSE Instruction
+docker build -t helmipradita/expose expose
+
+docker image inspect helmipradita/expose
+
+docker container create --name expose -p 8080:8080 helmipradita/expose
+
+docker container start expose
+
+curl localhost:8080
+
+docker container ls
+
+docker container stop expose
