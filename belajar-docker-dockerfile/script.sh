@@ -65,3 +65,22 @@ curl localhost:8080
 docker container ls
 
 docker container stop expose
+
+# ENV Instruction
+docker build -t helmipradita/env env
+
+docker image inspect helmipradita/env
+
+docker container create --name env --env APP_PORT=9090 -p 9090:9090 helmipradita/env
+
+# docker container create --name env -p 9090:8080 helmipradita/env
+
+docker container start env
+
+curl localhost:9090
+
+docker container ls
+
+docker container logs env
+
+docker container stop env
