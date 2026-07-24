@@ -19,3 +19,7 @@ curl http://localhost:8081
 docker events --filter 'container=mongodb-express-example'
 
 docker stats
+
+docker compose -f prod.yaml create
+
+docker compose -f prod.yaml start
