@@ -23,3 +23,7 @@ docker stats
 docker compose -f prod.yaml create
 
 docker compose -f prod.yaml start
+
+docker compose -f docker-compose.yaml -f dev.yaml create
+
+docker compose -f docker-compose.yaml -f dev.yaml start
