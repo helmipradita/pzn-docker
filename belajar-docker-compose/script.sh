@@ -9,3 +9,7 @@ docker compose stop
 docker compose down
 
 docker compose ls
+
+curl http://localhost:8080
+
+curl http://localhost:8081
